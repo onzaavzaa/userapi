@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="userApp">
+    <head>
+
+      <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="">
+        <title>Pisyek Demo Todo App with CodeIgniter + AngularJS</title>
+    </head>
+
+    <body data-ng-controller="UserCtrl">
+
+<div class="container">
+  <h1>Test angular with REST API</h1>
+  <table class='table table-striped'>
+    <tbody>
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>E-MAL</th>
+      </tr>
+    </thead>
+      <tr ng:repeat="user in data">
+         <td>{{user.id}}</td>
+         <td>{{user.name}}</td>
+         <td>{{user.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+<div>
+
+
+
+        <script src="asset/js/angular.min.js"></script>
+        <script src="asset/js/app.js"></script>
+    </body>
+</html>
